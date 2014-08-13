@@ -7,7 +7,7 @@ This plugin is required and you'll find it in any package distributed that conta
 
 # Installation
 
-To install this plugin, just download the zip version of this repository and unzip it under `/your/site/grav/user/plugins` and rename the folder to `error`.
+To install this plugin, just download the zip version of this repository and unzip it under `/your/site/grav/user/plugins`. Then, rename the folder to `error`.
 
 You should now have all the plugin files under
 
