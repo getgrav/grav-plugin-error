@@ -1,39 +1,48 @@
 <?php
 namespace Grav\Plugin;
 
-use \Grav\Common\Plugin;
-use \Grav\Common\Registry;
-use \Grav\Common\Grav;
-use \Grav\Common\Page\Page;
-use \Grav\Common\Page\Pages;
+use Grav\Common\Plugin;
+use Grav\Common\Grav;
+use Grav\Common\Page\Page;
+use Grav\Common\Page\Pages;
+use Grav\Component\EventDispatcher\Event;
 
 class ErrorPlugin extends Plugin
 {
     /**
-     * Display error page if no page was found for the current route.
+     * @return array
      */
-    public function onAfterGetPage()
+    public static function getSubscribedEvents() {
+        return [
+            'onPageNotFound' => ['onPageNotFound', 0]
+        ];
+    }
+
+    /**
+     * Display error page if no page was found for the current route.
+     *
+     * @param Event $event
+     */
+    public function onPageNotFound(Event $event)
     {
-        /** @var Grav $grav */
-        $grav = Registry::get('Grav');
+        $this->enable([
+            'onAfterTwigTemplatesPaths' => ['onAfterTwigTemplatesPaths', -10]
+        ]);
+
         /** @var Pages $pages */
-        $pages = Registry::get('Pages');
+        $pages = $this->grav['pages'];
 
-        // Not found: return error page instead.
-        if ((!$grav->page || !$grav->page->routable())) {
+        // Try to load user error page.
+        $page = $pages->dispatch($this->config->get('plugins.error.routes.404', '/error'), true);
 
-            // try to load user error page
-            $page = $pages->dispatch($this->config->get('error.404', '/error'), true);
-
-            // if none provided use built in
-            if (!$page) {
-                $page = new Page;
-                $page->init(new \SplFileInfo(__DIR__ . '/pages/error.md'));
-            }
-
-            // Set the page
-            $grav->page = $page;
+        if (!$page) {
+            // If none provided use built in error page.
+            $page = new Page;
+            $page->init(new \SplFileInfo(__DIR__ . '/pages/error.md'));
         }
+
+        $event->page = $page;
+        $event->stopPropagation();
     }
 
     /**
@@ -41,6 +50,6 @@ class ErrorPlugin extends Plugin
      */
     public function onAfterTwigTemplatesPaths()
     {
-        Registry::get('Twig')->twig_paths[] = __DIR__ . '/templates';
+        $this->grav['twig']->twig_paths[] = __DIR__ . '/templates';
     }
 }
