@@ -26,7 +26,7 @@ class ErrorPlugin extends Plugin
     public function onPageNotFound(Event $event)
     {
         $this->enable([
-            'onAfterTwigTemplatesPaths' => ['onAfterTwigTemplatesPaths', -10]
+            'onTwigTemplatePaths' => ['onTwigTemplatePaths', -10]
         ]);
 
         /** @var Pages $pages */
@@ -48,7 +48,7 @@ class ErrorPlugin extends Plugin
     /**
      * Add current directory to twig lookup paths.
      */
-    public function onAfterTwigTemplatesPaths()
+    public function onTwigTemplatePaths()
     {
         $this->grav['twig']->twig_paths[] = __DIR__ . '/templates';
     }
