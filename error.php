@@ -5,7 +5,7 @@ use Grav\Common\Plugin;
 use Grav\Common\Grav;
 use Grav\Common\Page\Page;
 use Grav\Common\Page\Pages;
-use Grav\Component\EventDispatcher\Event;
+use RocketTheme\Toolbox\Event\Event;
 
 class ErrorPlugin extends Plugin
 {
