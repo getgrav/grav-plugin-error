@@ -46,7 +46,7 @@ class ErrorPlugin extends Plugin
         $event->page = $page;
         $event->stopPropagation();
         
-        header("HTTP/1.0 404 Not Found");
+
     }
 
     /**
