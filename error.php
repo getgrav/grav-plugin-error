@@ -13,7 +13,8 @@ class ErrorPlugin extends Plugin
     /**
      * @return array
      */
-    public static function getSubscribedEvents() {
+    public static function getSubscribedEvents()
+    {
         return [
             'onPageNotFound' => ['onPageNotFound', 0],
             'onGetPageTemplates' => ['onGetPageTemplates', 0],
@@ -45,8 +46,6 @@ class ErrorPlugin extends Plugin
 
         $event->page = $page;
         $event->stopPropagation();
-        
-
     }
 
     /**
