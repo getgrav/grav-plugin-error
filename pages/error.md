@@ -1,9 +1,8 @@
 ---
-title: Error Page
+title: Page not Found
 robots: noindex,nofollow
 template: error
 routable: false
-code: 404
-status: "HTTP/1.0 404 Not Found"
+http_response_code: 404
 ---
 Woops. Looks like this page doesn't exist.
