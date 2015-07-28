@@ -24,3 +24,9 @@ form:
         0: Disabled
       validate:
         type: bool
+
+    routes.404:
+      type: text
+      size: medium
+      label: 404 Route
+      default: '/error'
