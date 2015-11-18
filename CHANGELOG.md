@@ -1,3 +1,8 @@
+# v1.3.1
+## XX/XX/2015
+1. [](#new)
+    * Implemented CLI commands for the plugin
+
 # v1.3.0
 ## 08/25/2015
 
