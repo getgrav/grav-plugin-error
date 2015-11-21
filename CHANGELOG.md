@@ -1,5 +1,5 @@
-# v1.3.1
-## XX/XX/2015
+# v1.4.0
+## 11/21/2015
 1. [](#new)
     * Implemented CLI commands for the plugin
 
