@@ -54,6 +54,12 @@ Copy the page file [error.md](pages/error.md) into the `pages` folder of your us
 
 You can now edit the override and tweak it however you prefer.
 
+#### Other languages
+
+If your site is not in English, you can use one of the other `error.<language>.md` files to copy as `error.md` into your pages folder.
+
+If you have a multi-language site you can simply take the files of the languages you need, and/or add files with the languages you are missing.
+
 # CLI Usage
 The `error` plugin comes with a CLI command that outputs the `grav.log` in a beautified way, with possibility of limiting the amount of errors displayed, as well as include the trace in the output.
 
