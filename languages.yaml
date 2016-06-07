@@ -1,0 +1,8 @@
+en:
+  PLUGIN_ERROR:
+    ERROR: "Error"
+    ERROR_MESSAGE: "Woops. Looks like this page doesn't exist."
+it:
+  PLUGIN_ERROR:
+    ERROR: "Errore"
+    ERROR_MESSAGE: "Ooops. A quanto pare, questa pagina non esiste"
