@@ -9,4 +9,9 @@ fr:
 it:
   PLUGIN_ERROR:
     ERROR: "Errore"
-    ERROR_MESSAGE: "Ooops. A quanto pare, questa pagina non esiste"
+    ERROR_MESSAGE: "Ooops. A quanto pare, questa pagina non esiste."
+ru:
+  PLUGIN_ERROR:
+    ERROR: "Ошибка"
+    ERROR_MESSAGE: "Упс. Похоже, эта страница не существует."
+    
