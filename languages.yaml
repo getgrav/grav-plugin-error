@@ -22,4 +22,4 @@ ru:
 da:
   PLUGIN_ERROR:
     ERROR: "Fejl"
-    ERROR_MESSAGE: "Ups. Det ser ud til at siden ikke eksistere."
+    ERROR_MESSAGE: "Ups. Det ser ud til at siden ikke eksisterer."
