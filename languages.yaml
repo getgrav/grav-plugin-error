@@ -19,4 +19,7 @@ ru:
   PLUGIN_ERROR:
     ERROR: "Ошибка"
     ERROR_MESSAGE: "Упс. Похоже, эта страница не существует."
-    
+da:
+  PLUGIN_ERROR:
+    ERROR: "Fejl"
+    ERROR_MESSAGE: "Ups. Det ser ud til at siden ikke eksisterer."
