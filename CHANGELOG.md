@@ -1,3 +1,11 @@
+# v1.5.0
+## 07/14/2015
+
+1. [](#improved)
+    * Translate some blueprint configuration options
+    * Allow translating the error message
+    * Added french, russian, romanian, danish, italian
+
 # v1.4.1
 ## 12/11/2015
 
