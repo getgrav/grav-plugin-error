@@ -2,7 +2,7 @@
 ## xx/xx/2016
 
 1. [](#improved)
-    * Added chinese translation
+    * Added chinese and german translations
 
 # v1.5.0
 ## 07/14/2015
