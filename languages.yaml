@@ -2,6 +2,10 @@ en:
   PLUGIN_ERROR:
     ERROR: "Error"
     ERROR_MESSAGE: "Woops. Looks like this page doesn't exist."
+de:
+  PLUGIN_ERROR:
+    ERROR: "Fehler"
+    ERROR_MESSAGE: "Uuups. Sieht aus als ob diese Seite nicht existiert."    
 ro:
   PLUGIN_ERROR:
     ERROR: "Eroare"
