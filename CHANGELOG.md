@@ -1,3 +1,9 @@
+# v1.x.x
+## xx/xx/2016
+
+1. [](#improved)
+    * Added chinese translation
+
 # v1.5.0
 ## 07/14/2015
 
