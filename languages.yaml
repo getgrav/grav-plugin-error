@@ -6,6 +6,11 @@ de:
   PLUGIN_ERROR:
     ERROR: "Fehler"
     ERROR_MESSAGE: "Uuups. Sieht aus als ob diese Seite nicht existiert."    
+hr:
+  PLUGIN_ERROR:
+    ERROR: "Greška"
+    ERROR_MESSAGE: "Uups. Izgleda da ova stranica ne postoji."
+
 ro:
   PLUGIN_ERROR:
     ERROR: "Eroare"
