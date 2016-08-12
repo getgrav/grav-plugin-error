@@ -26,7 +26,7 @@ it:
 ru:
   PLUGIN_ERROR:
     ERROR: "Ошибка"
-    ERROR_MESSAGE: "Упс. Похоже, эта страница не существует."
+    ERROR_MESSAGE: "Упс. Похоже, этой страницы не существует."
 da:
   PLUGIN_ERROR:
     ERROR: "Fejl"
