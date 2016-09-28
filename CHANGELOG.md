@@ -3,6 +3,7 @@
 
 1. [](#improved)
     * Added Croatian translation
+    * Improved `autoescape: true` support
 
 # v1.5.1
 ## 07/18/2016
