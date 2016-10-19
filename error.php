@@ -18,6 +18,7 @@ class ErrorPlugin extends Plugin
         return [
             'onPageNotFound' => ['onPageNotFound', 0],
             'onGetPageTemplates' => ['onGetPageTemplates', 0],
+            'onTwigTemplatePaths' => ['onTwigTemplatePaths', -10]
         ];
     }
 
@@ -28,10 +29,6 @@ class ErrorPlugin extends Plugin
      */
     public function onPageNotFound(Event $event)
     {
-        $this->enable([
-            'onTwigTemplatePaths' => ['onTwigTemplatePaths', -10]
-        ]);
-
         /** @var Pages $pages */
         $pages = $this->grav['pages'];
 
