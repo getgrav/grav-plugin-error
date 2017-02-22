@@ -1,5 +1,5 @@
 ---
-title: Page not Found
+title: "{{ 'PLUGIN_ERROR.ERROR_404_HEADER'|t }}"
 robots: noindex,nofollow
 template: error
 routable: false
