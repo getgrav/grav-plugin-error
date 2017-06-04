@@ -10,7 +10,6 @@ hr:
   PLUGIN_ERROR:
     ERROR: "Greška"
     ERROR_MESSAGE: "Uups. Izgleda da ova stranica ne postoji."
-
 ro:
   PLUGIN_ERROR:
     ERROR: "Eroare"
@@ -39,3 +38,7 @@ cs:
   PLUGIN_ERROR:
     ERROR: "Chyba"
     ERROR_MESSAGE: "A jéje. Vypadá to, že hledaná stránka tu není."
+pl:
+  PLUGIN_ERROR:
+    ERROR: "Błąd"
+    ERROR_MESSAGE: "Ups. Wygląda na to, że ta strona nie istnieje."
