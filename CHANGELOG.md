@@ -1,3 +1,11 @@
+# v1.7.1
+## 03/09/2018
+
+1. [](#improved)
+    * Added Polish + Catalan translation
+    * Added translation of error page title
+    * Updated `README.md` to reference custom error pages
+
 # v1.6.0
 ## 10/19/2016
 
