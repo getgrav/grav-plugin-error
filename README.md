@@ -32,13 +32,6 @@ You should now have all the plugin files under
 
 The `error` plugin doesn't require any configuration. The moment you install it, it is ready to use.
 
-To have proper page title shown in browser, please enable `process_twig` in `frontmatter` section of your `user/config/system.yaml` file:
-
-```YAML
-frontmatter:
-    process_twig: true
-```
-
 Something you might want to do is to override the look and feel of the error page, and with Grav it is super easy.
 
 ### Template

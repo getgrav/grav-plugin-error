@@ -2,54 +2,42 @@ en:
   PLUGIN_ERROR:
     ERROR: "Error"
     ERROR_MESSAGE: "Woops. Looks like this page doesn't exist."
-    ERROR_404_HEADER: "Page not found"
 de:
   PLUGIN_ERROR:
     ERROR: "Fehler"
-    ERROR_MESSAGE: "Uuups. Sieht aus als ob diese Seite nicht existiert."
-    ERROR_404_HEADER: "Page not found"
+    ERROR_MESSAGE: "Uuups. Sieht aus als ob diese Seite nicht existiert."    
 hr:
   PLUGIN_ERROR:
     ERROR: "Greška"
     ERROR_MESSAGE: "Uups. Izgleda da ova stranica ne postoji."
-    ERROR_404_HEADER: "Page not found"
-
 ro:
   PLUGIN_ERROR:
     ERROR: "Eroare"
     ERROR_MESSAGE: "Ooops. Se pare că pagina nu există."    
-    ERROR_404_HEADER: "Page not found"
 fr:
   PLUGIN_ERROR:
     ERROR: "Erreur"
     ERROR_MESSAGE: "Oups. Il semble que cette page n’existe pas."
-    ERROR_404_HEADER: "Page not found"
 it:
   PLUGIN_ERROR:
     ERROR: "Errore"
     ERROR_MESSAGE: "Ooops. A quanto pare, questa pagina non esiste."
-    ERROR_404_HEADER: "Page not found"
 ru:
   PLUGIN_ERROR:
     ERROR: "Ошибка"
     ERROR_MESSAGE: "Упс. Похоже, этой страницы не существует."
-    ERROR_404_HEADER: "Page not found"
 da:
   PLUGIN_ERROR:
     ERROR: "Fejl"
     ERROR_MESSAGE: "Ups. Det ser ud til at siden ikke eksisterer."
-    ERROR_404_HEADER: "Page not found"
 zh:
   PLUGIN_ERROR:
     ERROR: "错误"
     ERROR_MESSAGE: "呃，似乎这个页面不存在。"
-    ERROR_404_HEADER: "Page not found"
 cs:
   PLUGIN_ERROR:
     ERROR: "Chyba"
     ERROR_MESSAGE: "A jéje. Vypadá to, že hledaná stránka tu není."
-    ERROR_404_HEADER: "Stránka nenalezena"
-
 pl:
   PLUGIN_ERROR:
     ERROR: "Błąd"
