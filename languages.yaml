@@ -13,6 +13,7 @@ hr:
     ERROR: "Greška"
     ERROR_MESSAGE: "Uups. Izgleda da ova stranica ne postoji."
     ERROR_404_HEADER: "Page not found"
+
 ro:
   PLUGIN_ERROR:
     ERROR: "Eroare"
@@ -48,3 +49,12 @@ cs:
     ERROR: "Chyba"
     ERROR_MESSAGE: "A jéje. Vypadá to, že hledaná stránka tu není."
     ERROR_404_HEADER: "Stránka nenalezena"
+
+pl:
+  PLUGIN_ERROR:
+    ERROR: "Błąd"
+    ERROR_MESSAGE: "Ups. Wygląda na to, że ta strona nie istnieje."
+ca:
+  PLUGIN_ERROR:
+    ERROR: "Error"
+    ERROR_MESSAGE: "Ups. Sembla que aquesta pàgina no existeix."
