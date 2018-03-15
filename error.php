@@ -16,7 +16,7 @@ class ErrorPlugin extends Plugin
     public static function getSubscribedEvents()
     {
         return [
-            'onPageNotFound' => ['onPageNotFound', 0],
+            'onPageNotFound' => ['onPageNotFound', -10],
             'onGetPageTemplates' => ['onGetPageTemplates', 0],
             'onTwigTemplatePaths' => ['onTwigTemplatePaths', -10]
         ];
