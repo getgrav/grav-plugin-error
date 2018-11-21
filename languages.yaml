@@ -26,6 +26,10 @@ ru:
   PLUGIN_ERROR:
     ERROR: "Ошибка"
     ERROR_MESSAGE: "Упс. Похоже, этой страницы не существует."
+uk:
+  PLUGIN_ERROR:
+    ERROR: "Помилка"
+    ERROR_MESSAGE: "Упс. Схоже, цієї сторінки не існує."
 da:
   PLUGIN_ERROR:
     ERROR: "Fejl"
