@@ -28,6 +28,11 @@ ru:
     ERROR: "Ошибка"
     ERROR_MESSAGE: "Упс. Похоже, этой страницы не существует."
     ROUTE_404: "Маршрут 404"
+uk:
+  PLUGIN_ERROR:
+    ERROR: "Помилка"
+    ERROR_MESSAGE: "Упс. Схоже, цієї сторінки не існує."
+    ROUTE_404: "Маршрут 404"
 da:
   PLUGIN_ERROR:
     ERROR: "Fejl"
