@@ -1,3 +1,9 @@
+# v1.6.2
+## mm/dd/2019
+
+1. [](#new)
+    * Fixed a few issues found by phpstan
+
 # v1.6.1
 ## 03/09/2018
 
