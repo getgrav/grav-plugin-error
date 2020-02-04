@@ -10,6 +10,8 @@ homepage: https://github.com/getgrav/grav-plugin-error
 keywords: error, plugin, required
 bugs: https://github.com/getgrav/grav-plugin-error/issues
 license: MIT
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
 
 form:
   validation: strict
