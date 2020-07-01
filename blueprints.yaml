@@ -1,6 +1,8 @@
 name: Error
-version: 1.6.2
+version: 1.7.0
 description: Displays the error page.
+type: plugin
+slug: error
 icon: warning
 author:
   name: Team Grav
