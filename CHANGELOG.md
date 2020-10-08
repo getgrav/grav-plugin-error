@@ -1,5 +1,5 @@
 # v1.7.1
-## mm/dd/2020
+## 10/08/2020
 
 1. [](#bugfix)
     * Fixed error page being cached, fixes issue with non-existing resources which later become available
