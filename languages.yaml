@@ -44,7 +44,7 @@ zh:
 cs:
   PLUGIN_ERROR:
     ERROR: "Chyba"
-    ERROR_MESSAGE: "A jéje. Vypadá to, že hledaná stránka tu není."
+    ERROR_MESSAGE: "Ups. Vypadá to, že tato stránka neexistuje."
 pl:
   PLUGIN_ERROR:
     ERROR: "Błąd"
