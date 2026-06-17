@@ -1,3 +1,9 @@
+# v2.0.1
+## 06/17/2026
+
+1. [](#bugfix)
+    * The error page now shows its message correctly out of the box on Grav 2, instead of leaving raw template code on the 404 page when Twig processing in content is turned off by default ([#47](https://github.com/getgrav/grav-plugin-error/issues/47)).
+
 # v2.0.0
 ## 05/05/2026
 
