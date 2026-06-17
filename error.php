@@ -82,10 +82,22 @@ class ErrorPlugin extends Plugin
         $page = $pages->dispatch($this->config->get('plugins.error.routes.404', '/error'), true);
         if (!$page) {
             // If none provided use built in error page.
+            $language = $this->grav['language'];
             $page = new Page;
             $page->init(new \SplFileInfo(__DIR__ . '/pages/error.md'));
-            $page->title($this->grav['language']->translate('PLUGIN_ERROR.ERROR') . ' ' . $page->header()->http_response_code);
+            $page->title($language->translate('PLUGIN_ERROR.ERROR') . ' ' . $page->header()->http_response_code);
 
+            // The page body uses a [translate] shortcode for the message, the
+            // safe in-content replacement for Twig (Grav 2 disables Twig in
+            // content by default — #47). Shortcode Core normally renders it, but
+            // the 404 is the last line of defense and must never show a raw tag,
+            // so if Shortcode Core isn't available we supply the translated
+            // message directly. Custom page content still takes precedence.
+            $shortcodesAvailable = $this->config->get('plugins.shortcode-core.enabled');
+            $isDefaultBody = strpos((string) $page->rawMarkdown(), '[translate]') !== false;
+            if (!$shortcodesAvailable && $isDefaultBody) {
+                $page->content($language->translate('PLUGIN_ERROR.ERROR_MESSAGE'));
+            }
         }
 
         // Login page may not have the correct Cache-Control header set, force no-store for the proxies.
