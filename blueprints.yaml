@@ -1,5 +1,5 @@
 name: Error
-version: 2.0.1
+version: 2.0.2
 description: Displays the error page.
 type: plugin
 slug: error

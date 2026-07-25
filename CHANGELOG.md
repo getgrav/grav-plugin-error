@@ -1,3 +1,9 @@
+# v2.0.2
+## 07/25/2026
+
+1. [](#new)
+    * Added a Spanish translation for the error page ([#48](https://github.com/getgrav/grav-plugin-error/pull/48)).
+
 # v2.0.1
 ## 06/17/2026
 
