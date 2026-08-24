@@ -78,9 +78,17 @@ class ErrorPlugin extends Plugin
         /** @var Pages $pages */
         $pages = $this->grav['pages'];
 
-        // Try to load user error page.
+        // Try to load user error page. Passing `$all = true` is deliberate: a
+        // custom error page is normally `routable: false`, so the routable check
+        // has to be skipped. The trade-off is that a folder holding no page file
+        // at all (say it only contains a stray `500.html.php`) still comes back
+        // as a contentless stub, which would then win over the built-in page
+        // below and render blank -- with a 200 status, since the stub has no
+        // frontmatter to set one. `isPage()` is what separates a real page from a
+        // bare directory in both the regular and the Flex page engines;
+        // `exists()` additionally catches a file deleted after indexing. (#49)
         $page = $pages->dispatch($this->config->get('plugins.error.routes.404', '/error'), true);
-        if (!$page) {
+        if (!$page || !$page->isPage() || !$page->exists()) {
             // If none provided use built in error page.
             $language = $this->grav['language'];
             $page = new Page;

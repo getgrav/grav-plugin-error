@@ -1,3 +1,9 @@
+# v2.0.3
+## 08/24/2026
+
+1. [](#bugfix)
+    * Fixed a blank page being served instead of the error page when the site has an `error` folder that contains no actual page file. The empty folder was being treated as a usable page, and was returned with a success status rather than a 404 [#49](https://github.com/getgrav/grav-plugin-error/issues/49).
+
 # v2.0.2
 ## 07/25/2026
 
