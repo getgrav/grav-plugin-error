@@ -1,3 +1,9 @@
+# v2.0.4
+## 08/28/2026
+
+1. [](#improved)
+    * The Spanish translation now covers every string, and trailing whitespace was cleaned out of the German and Romanian entries. Thanks to @pmoreno-rodriguez
+
 # v2.0.3
 ## 08/24/2026
 
