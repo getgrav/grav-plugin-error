@@ -87,8 +87,11 @@ class ErrorPlugin extends Plugin
         // frontmatter to set one. `isPage()` is what separates a real page from a
         // bare directory in both the regular and the Flex page engines;
         // `exists()` additionally catches a file deleted after indexing. (#49)
+        // `published()` is checked separately because skipping the routable
+        // check above also skips its own published() check, so an unpublished
+        // custom error page would otherwise still be served (#4287).
         $page = $pages->dispatch($this->config->get('plugins.error.routes.404', '/error'), true);
-        if (!$page || !$page->isPage() || !$page->exists()) {
+        if (!$page || !$page->isPage() || !$page->exists() || !$page->published()) {
             // If none provided use built in error page.
             $language = $this->grav['language'];
             $page = new Page;
