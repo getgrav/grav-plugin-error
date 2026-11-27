@@ -1,3 +1,9 @@
+# v2.0.6
+## 11/27/2026
+
+1. [](#bugfix)
+    * The built-in 404 page shows its message instead of a raw `[translate]` tag on sites still running Shortcode Core 5.x, which has no `[translate]` shortcode
+
 # v2.0.5
 ## 11/03/2026
 
