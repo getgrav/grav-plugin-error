@@ -103,9 +103,12 @@ class ErrorPlugin extends Plugin
             // safe in-content replacement for Twig (Grav 2 disables Twig in
             // content by default — #47). Shortcode Core normally renders it, but
             // the 404 is the last line of defense and must never show a raw tag,
-            // so if Shortcode Core isn't available we supply the translated
-            // message directly. Custom page content still takes precedence.
-            $shortcodesAvailable = $this->config->get('plugins.shortcode-core.enabled');
+            // so if Shortcode Core isn't available, or is older than 6.0 and has
+            // no [translate] yet, we supply the translated message directly.
+            // Custom page content still takes precedence.
+            $shortcodes = $this->grav['shortcode'] ?? null;
+            $shortcodesAvailable = is_object($shortcodes) && method_exists($shortcodes, 'getHandlers')
+                && $shortcodes->getHandlers()->has('translate');
             $isDefaultBody = strpos((string) $page->rawMarkdown(), '[translate]') !== false;
             if (!$shortcodesAvailable && $isDefaultBody) {
                 $page->content($language->translate('PLUGIN_ERROR.ERROR_MESSAGE'));
